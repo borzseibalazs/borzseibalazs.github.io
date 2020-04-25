@@ -7,9 +7,15 @@
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
             <a-assets>
-			<a-video id="vid" autoplay loop="true" src="video.mp4"></a-video>
-  
-            </a-assets>
+				<video id="penguin-sledding" autoplay loop="true" src="video.mp4"></video>
+			</a-assets>
+
+			<!-- Using the asset management system. -->
+			<a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
+
+			<!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+			<a-video src="video.mp4"></a-video>
+		</a-scene>
 
             <!-- handle hiro marker -->
             <a-marker preset="hiro">
