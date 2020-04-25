@@ -10,16 +10,16 @@
 				<video id="penguin-sledding" autoplay loop="true" src="asset/video.mp4"></video>
 			</a-assets>
 
-			<!-- Using the asset management system. -->
-			<a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
-
-			<!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
-			<a-video src="video.mp4"></a-video>
+			
 		</a-scene>
 
             <!-- handle hiro marker -->
             <a-marker preset="hiro">
-                
+                <!-- Using the asset management system. -->
+			<a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
+
+			<!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+			<a-video src="video.mp4"></a-video>
 
                 <!-- second entity: reference to the above audio -->
                 <a-entity sound="src: #helmet_sound; volume: 1; loop: true">
